@@ -1,0 +1,108 @@
+/* ✅ Home Page Styling */
+.home {
+    max-width: 900px;
+    margin: 40px auto;
+    text-align: center;
+    font-family: "Arial", sans-serif;
+  }
+  
+  h1 {
+    color: #ff5733;
+    margin-bottom: 20px;
+  }
+  
+  /* ✅ Search & Filter Controls */
+  input[type="text"],
+  select {
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+  }
+  
+  input[type="text"]:focus,
+  select:focus {
+    border-color: #ff4500;
+    outline: none;
+  }
+  
+  /* ✅ Table Styling */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th,
+  td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #ff5733;
+    color: white;
+    cursor: pointer;
+  }
+  
+  th:hover {
+    background-color: #ff7043;
+  }
+  
+  td a {
+    text-decoration: none;
+    color: #ff4500;
+    font-weight: bold;
+  }
+  
+  td a:hover {
+    text-decoration: underline;
+  }
+  
+  /* ✅ Pagination Buttons */
+  button {
+    margin: 20px 10px;
+    padding: 10px 16px;
+    font-size: 16px;
+    border: none;
+    background-color: #ff5733;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #ff7043;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* ✅ Responsive Design */
+  @media (max-width: 768px) {
+    .home {
+      max-width: 100%;
+      padding: 0 15px;
+    }
+  
+    input[type="text"],
+    select {
+      width: 100%;
+    }
+  
+    table {
+      font-size: 14px;
+    }
+  
+    th, td {
+      padding: 8px;
+    }
+  }
+  

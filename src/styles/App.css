@@ -1,0 +1,178 @@
+/* ✅ General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+  }
+  
+  body {
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* ✅ Main Container */
+  .container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* ✅ Header */
+  .header {
+    background: #ff5733;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  /* ✅ Search Box */
+  .search-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .search-input {
+    width: 60%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .search-input:focus {
+    border-color: #ff5733;
+    outline: none;
+  }
+  
+  /* ✅ Dishes Table */
+  .table-container {
+    overflow-x: auto;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #ff5733;
+    color: white;
+    cursor: pointer;
+  }
+  
+  tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* ✅ Pagination */
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .pagination button {
+    padding: 8px 15px;
+    margin: 0 5px;
+    border: none;
+    background: #ff5733;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .pagination button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* ✅ Dish Details */
+  .dish-details {
+    text-align: center;
+  }
+  
+  .dish-name {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .subtext {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 15px;
+  }
+  
+  .ingredients-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    margin-top: 15px;
+  }
+  
+  .ingredients-container span {
+    background-color: #f0f0f0;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  /* ✅ Dish Suggester */
+  .suggester-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .ingredient-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .ingredient-item {
+    background: #ff5733;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .suggested-dishes {
+    margin-top: 20px;
+  }
+  
+  /* ✅ Responsive Design */
+  @media (max-width: 768px) {
+    .container {
+      width: 90%;
+      padding: 15px;
+    }
+  
+    .search-input {
+      width: 80%;
+    }
+  
+    .pagination {
+      flex-wrap: wrap;
+    }
+  }
+  
