@@ -1,0 +1,17 @@
+/* Dish Details Page Styling */
+.dish-details {
+    background: #fff8e1;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+  }
+  
+  .dish-details h1 {
+    color: #d84315;
+  }
+  
+  .dish-details p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
